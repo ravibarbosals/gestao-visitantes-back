@@ -1,15 +1,15 @@
-@CrossOrigin(origins = "http://localhost:5173")
 package com.brennandDigital.Projeto.Controllers;
 
-import com.brennandDigital.Projeto.Domain.User;
-import com.brennandDigital.Projeto.Services.AuthServices;
-import com.brennandDigital.Projeto.Services.UserServices;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.brennandDigital.Projeto.Domain.User;
+import com.brennandDigital.Projeto.Services.AuthServices;
+
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping(value = "/auth")
